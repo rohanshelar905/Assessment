@@ -229,10 +229,10 @@ public class DemoController {
 			
 			
 			@GetMapping("/findEmpByName")
-			public ModelAndView findByName() throws Exception{
-				ModelAndView mv=new ModelAndView("findEmpByName");
-				return mv;
+			public String findByName() throws Exception{
+				return "findEmpByName";
 			}
+			
 			
 			@PostMapping("/findByName")
 			public ModelAndView findByName(@RequestParam("name") String name)throws Exception
